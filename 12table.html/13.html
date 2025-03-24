@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Features</title>
+    <style>
+        body 
+        
+        <h1>MUHAMMAD AHMAD JAMAL</h1>
+
+
+<hr>
+    font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        <hr>
+        form 
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        <hr>
+        label 
+            display: block;
+            margin: 10px 0 5px;
+        
+        input, textarea, select, button 
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        <hr>
+        button 
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        
+        button:hover {
+            background-color: #0056b3;
+        <hr>
+    </style>
+</head>
+<body>
+    <h1>Sample Form</h1>
+
+    <!-- Form with GET method -->
+    <form method="GET">
+        <h2>GET Method Form</h2>
+<hr>
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+<hr>
+        
+    
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+<hr>
+        <h1>Radio Buttons</h1>
+        <label>Favorite Color:</label>
+        <input type="radio" id="red" name="favoriteColor" value="Red">
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="favoriteColor" value="Blue">
+        <label for="blue">Blue</label>
+        <input type="radio" id="green" name="favoriteColor" value="Green">
+        <label for="green">Green</label>
+<hr>
+        <Checkbox >
+        <label>
+            <input type="checkbox" name="agreement" required>
+            I agree to the terms and conditions
+        </label>
+<hr>
+        <Drop Down>
+        <label for="favoriteFruit">Favorite Fruit:</label>
+        <select id="favoriteFruit" name="favoriteFruit">
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Cherry">Cherry</option>
+        </select>
+<hr>
+        <Email >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="Enter your website">
+
+        <!-- Color -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+<hr>
+        <!-- Date -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <!-- Range -->
+        <label for="age">Age:</label>
+        <input type="range" id="age" name="age" min="1" max="100">
+
+        <!-- File Input -->
+        <label for="resume">Upload Resume/Profile Picture:</label>
+        <input type="file" id="resume" name="resume">
+<hr>
+        <!-- Search -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Form</button>
+    </form>
+<hr>
+    <!-- Form with POST method -->
+    <form method="POST">
+        <h2>POST Method Form</h2>
+        <label for="postName">Name:</label>
+        <input type="text" id="postName" name="postName" placeholder="Enter your name" required>
+
+        <button type="submit">Submit (POST)</button>
+    </form>
+    <hr>
+</body>
+</html>
